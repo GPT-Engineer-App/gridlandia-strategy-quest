@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sword, Tank, Wrench } from 'lucide-react';
+import { Sword, Truck, Wrench } from 'lucide-react';
 
 const GameBoard = ({ grid, handleTileClick, GRID_SIZE, TILE_SIZE }) => {
   const getUnitIcon = (unitType) => {
@@ -7,7 +7,7 @@ const GameBoard = ({ grid, handleTileClick, GRID_SIZE, TILE_SIZE }) => {
       case 'soldier':
         return <Sword className="h-4 w-4 text-red-500" />;
       case 'tank':
-        return <Tank className="h-4 w-4 text-yellow-500" />;
+        return <Truck className="h-4 w-4 text-yellow-500" />;
       case 'builder':
         return <Wrench className="h-4 w-4 text-purple-500" />;
       default:

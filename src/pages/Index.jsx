@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button"
-import { Sword, Tank, Wrench, Coins } from 'lucide-react';
+import { Sword, Truck, Wrench, Coins } from 'lucide-react';
 import GameBoard from '../components/GameBoard';
 
 const GRID_SIZE = 20;
@@ -9,7 +9,7 @@ const TILE_SIZE = 30;
 const terrainTypes = ['grass', 'water', 'mountain'];
 const unitTypes = [
   { type: 'soldier', icon: Sword, cost: 10 },
-  { type: 'tank', icon: Tank, cost: 20 },
+  { type: 'tank', icon: Truck, cost: 20 },
   { type: 'builder', icon: Wrench, cost: 15 },
 ];
 
